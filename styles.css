@@ -306,3 +306,11 @@ svg {
 svg:hover {
     transform: scale(120%);
 }
+
+.project {
+    transition: 300ms;
+}
+
+.project:hover {
+    transform: scale(105%);
+}
