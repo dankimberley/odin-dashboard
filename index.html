@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div class="sidebar">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                <span>Dashboard</span>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    <span>Home</span>
+                </li>
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span>Profile</span>
+                </li>
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    <span>Messages</span>
+                </li>
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span>History</span>
+                </li>
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                    <span>Tasks</span>
+                </li>
+            </ul>
+            <ul class="nav-additional">
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    <span>Settings</span>
+                </li>
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    <span>Support</span>
+                </li>
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    <span>Privacy</span>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="header">
+            <div class="search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text">
+            </div>
+            <ul class="actions" >
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></li>
+                <li><img src="Profile Picture.jpg" alt=""></li>
+                <li>Dan Kimberley</li>
+            </ul>
+            <div class="welcome" >
+                <div class="profile-picture">
+                    <img src="Profile Picture.jpg" alt="">
+                </div>
+                <div class="welcome-detail">
+                    <span class="small-text">Hey,</span>
+                    <span class="big-text">Dan Kimberley </span>
+                </div>
+
+            </div>
+            <div class="interact" >
+                <button type="button">New</button>
+                <button type="button">Upload</button>
+                <button type="button">Share</button>
+            </div>
+
+        </div>
+        <div class="projects">
+            <span style="font-size: 1.5rem; font-weight: bold;">Your Projects</span>
+            <div class="project-container" >
+                <div class="project">
+                    <div class="project-content">
+                        <h1>Project Title</h1>
+                        <p>Ornare lectus sit amet est placerat in egestas erat imperdiet. Sit amet aliquam id diam maecenas ultricies mi eget mauris. </p>
+                    </div>
+                    <div class="project-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h1>Project Title</h1>
+                        <p>Ornare lectus sit amet est placerat in egestas erat imperdiet. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Nec feugiat nisl pretium fusce id velit. Sit amet venenatis urna cursus eget. Amet purus gravida quis blandit turpis cursus in. Egestas erat imperdiet sed euismod nisi. At auctor urna nunc id cursus. Eu sem integer vitae justo eget magna fermentum iaculis. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Quis varius quam quisque id diam vel quam elementum. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Eget egestas purus viverra accumsan in nisl nisi. Et sollicitudin ac orci phasellus egestas tellus. Etiam tempor orci eu lobortis.</p>
+                    </div>
+                    <div class="project-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h1>Project Title</h1>
+                        <p>Ornare lectus sit amet est placerat in egestas erat imperdiet. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Nec feugiat nisl pretium fusce id velit. Sit amet venenatis urna cursus eget. Amet purus gravida quis blandit turpis cursus in. Egestas erat imperdiet sed euismod nisi. At auctor urna nunc id cursus. Eu sem integer vitae justo eget magna fermentum iaculis. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Quis varius quam quisque id diam vel quam elementum. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Eget egestas purus viverra accumsan in nisl nisi. Et sollicitudin ac orci phasellus egestas tellus. Etiam tempor orci eu lobortis.</p>
+                    </div>
+                    <div class="project-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h1>Project Title</h1>
+                        <p>Ornare lectus sit amet est placerat in egestas erat imperdiet. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Nec feugiat nisl pretium fusce id velit. Sit amet venenatis urna cursus eget. Amet purus gravida quis blandit turpis cursus in. Egestas erat imperdiet sed euismod nisi. At auctor urna nunc id cursus. Eu sem integer vitae justo eget magna fermentum iaculis. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Quis varius quam quisque id diam vel quam elementum. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Eget egestas purus viverra accumsan in nisl nisi. Et sollicitudin ac orci phasellus egestas tellus. Etiam tempor orci eu lobortis.</p>
+                    </div>
+                    <div class="project-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h1>Project Title</h1>
+                        <p>Ornare lectus sit amet est placerat in egestas erat imperdiet. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Nec feugiat nisl pretium fusce id velit. Sit amet venenatis urna cursus eget. Amet purus gravida quis blandit turpis cursus in. Egestas erat imperdiet sed euismod nisi. At auctor urna nunc id cursus. Eu sem integer vitae justo eget magna fermentum iaculis. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Quis varius quam quisque id diam vel quam elementum. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Eget egestas purus viverra accumsan in nisl nisi. Et sollicitudin ac orci phasellus egestas tellus. Etiam tempor orci eu lobortis.</p>
+                    </div>
+                    <div class="project-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h1>Project Title</h1>
+                        <p>Ornare lectus sit amet est placerat in egestas erat imperdiet. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Nec feugiat nisl pretium fusce id velit. Sit amet venenatis urna cursus eget. Amet purus gravida quis blandit turpis cursus in. Egestas erat imperdiet sed euismod nisi. At auctor urna nunc id cursus. Eu sem integer vitae justo eget magna fermentum iaculis. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Quis varius quam quisque id diam vel quam elementum. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Eget egestas purus viverra accumsan in nisl nisi. Et sollicitudin ac orci phasellus egestas tellus. Etiam tempor orci eu lobortis.</p>
+                    </div>
+                    <div class="project-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h1>Project Title</h1>
+                        <p>Ornare lectus sit amet est placerat in egestas erat imperdiet. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Nec feugiat nisl pretium fusce id velit. Sit amet venenatis urna cursus eget. Amet purus gravida quis blandit turpis cursus in. Egestas erat imperdiet sed euismod nisi. At auctor urna nunc id cursus. Eu sem integer vitae justo eget magna fermentum iaculis. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Quis varius quam quisque id diam vel quam elementum. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Eget egestas purus viverra accumsan in nisl nisi. Et sollicitudin ac orci phasellus egestas tellus. Etiam tempor orci eu lobortis.</p>
+                    </div>
+                    <div class="project-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+        </div>
+        <div class="announcements">
+            <span style="font-size: 1.5rem; font-weight: bold;">Announcements</span>
+            <div class="announcement-container">
+                <div class="announcement">
+                    <h2>Sample announcement</h2>
+                    Some sample announcement text
+                </div>
+                <div class="announcement">
+                    <h2>Sample announcement</h2>
+                    Some sample announcement text
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
